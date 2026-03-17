@@ -1,0 +1,5 @@
+Each set of plots for various potentials contains:
+1. The energy convergence, showing how quickly the NN finds the ground state energy
+2. The wavefunction determined by the NN and the analytical solution if known
+
+Note: All in natural units
