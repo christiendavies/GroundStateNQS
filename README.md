@@ -14,13 +14,17 @@ Calculates the local energy at each point. Because derivatives are difficult whe
 ### Variational Principle
 The VP states that if you guess any wavefunction, the average energy of the guess will always be greater or equal to the true ground state. Convenient. Because of this the progam is just optimising itself to go tolower energy, each time the energy is calculated you tweak the weights to get slightly lower. It can't go any lower than the lowest, because quantum mechanics apparently.
 
-A known analytic loss function is used to find the gradients, then PyTorch's Adam optimiser changes the NN weights.
+A known loss function is used to find the gradients, then PyTorch's Adam optimiser changes the NN weights.
 
 ## Structure
 ansatz.py - Defines parameterised wavefunction
+
 sampler.py - The vectorised walking dead
+
 hamiltonian.py - Finds local energy with auto differentiation
+
 vmc.py - The training loop and the loss calculations
+
 main.py - Just runs the thing and plots it innit
 
 
